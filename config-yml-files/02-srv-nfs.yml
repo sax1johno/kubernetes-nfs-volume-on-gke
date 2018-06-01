@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nfs-server
 spec:
-  # clusterIP: 10.3.240.20
+  clusterIP: 10.3.240.20 # Switching to ClusterIP since DNS isn't resolving consistently.
   ports:
     - name: nfs
       port: 2049
