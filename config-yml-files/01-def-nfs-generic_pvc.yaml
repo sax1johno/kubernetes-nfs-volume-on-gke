@@ -29,6 +29,5 @@ spec:
             name: nfsstore
       volumes:
         - name: nfsstore
-          awsElasticBlockStore:
-            fsType: ext4
-            volumeID: pvc-aaa4aa44-4444-44A4-A4A4-4A444A4A44A4
+          persistentVolumeClaim:
+            claimName: claim_name
